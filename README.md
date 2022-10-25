@@ -3,7 +3,7 @@
 
 <p>
   This sudoku solver can accept sudokus in 2 ways, either from a .csv (comma separated values) file or get it directly from the user via the terminal. <br>
-  
+  To input sudoku as a list, enter 1, but to use a csv input 2
 </p>
 
 ## How to use normal input:
