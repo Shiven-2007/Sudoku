@@ -3,9 +3,6 @@
 
 <p>
   This sudoku solver can accept sudokus in 2 ways, either from a .csv (comma separated values) file or get it directly from the user via the terminal. <br>
-
-  It can also display multiple (upto 10) solutions of a puzzle.
-  
   
 </p>
 
