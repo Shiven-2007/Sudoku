@@ -44,18 +44,22 @@ def column(x, z):
             return False
     return True
 
-
+con=True
 def check():
-    for i in range(9):
-        for j in range(9):
-            if array[i][j] == 0:
-                for h in range(1, 10):
-                    if row(i, h) and column(j, h) and square(j, i, h):
-                        array[i][j] = h
-                        check()
-                        array[i][j] = 0
-                return
-    print(*array, sep="\n")
+    global con
+    while con:
+        for i in range(9):
+            for j in range(9):
+                if array[i][j] == 0:
+                    for h in range(1, 10):
+                        if row(i, h) and column(j, h) and square(j, i, h):
+                            array[i][j] = h
+                            check()
+                            array[i][j] = 0
+                    return
+        print(*array, sep="\n")
+        con=False
+        break
     if Choice==2:
         excel=open("Sudoku_Solution.csv","w", newline="\n")
         type=csv.writer(excel)
